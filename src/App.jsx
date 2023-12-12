@@ -1,8 +1,9 @@
 import "./App.css";
 
-import Header from "./components/Header/Header";
-import MenuLinks from "./components/MenuLinks/MenuLinks";
-import NewsBlock from "./components/NewsBlock/NewsBlock";
+import ChikenClub from "./UI/ChikenClub/ChikenClub";
+import Header from "./UI/Header/Header";
+import MenuLinks from "./UI/MenuLinks/MenuLinks";
+import NewsBlock from "./UI/NewsBlock/NewsBlock";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <NewsBlock />
       <MenuLinks />
+      <ChikenClub />
     </>
   );
 }

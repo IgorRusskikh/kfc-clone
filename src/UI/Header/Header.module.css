@@ -1,14 +1,19 @@
 #header {
+  top: 0;
+  z-index: 1;
+  width: 100%;
   display: flex;
+  position: fixed;
+  transition: top 0.2s;
   justify-content: center;
 }
 
 .header {
   gap: 10rem;
+  width: 100%;
   display: flex;
-  width: 78.125rem;
   padding: 0 20rem;
-  margin-top: 0.3rem;
+  padding-top: 0.3rem;
   background-color: #fff;
   justify-content: space-between;
 }
@@ -44,6 +49,7 @@
   height: fit-content;
   align-items: center;
   border-radius: 4rem;
+  font-family: Cera Pro;
   padding: 0.8rem 1.5rem;
 }
 
