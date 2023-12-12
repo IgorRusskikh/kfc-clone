@@ -1,0 +1,53 @@
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  gap: 10rem;
+  display: flex;
+  width: 78.125rem;
+  padding: 0 20rem;
+  margin-top: 0.3rem;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.leftSideHeader {
+  gap: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.headerMenu {
+  gap: 1.6rem;
+  display: flex;
+}
+
+.headerMenu p {
+  color: #6b6a68;
+}
+
+.rightSideHeader {
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.rightSideHeader button {
+  gap: 0.5rem;
+  border: none;
+  display: flex;
+  outline: none;
+  font-size: 13px;
+  font-weight: 900;
+  height: fit-content;
+  align-items: center;
+  border-radius: 4rem;
+  padding: 0.8rem 1.5rem;
+}
+
+.headerRedButton {
+  color: #fff;
+  background-color: #e4002b;
+}

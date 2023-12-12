@@ -1,0 +1,25 @@
+.pageContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newsContainer {
+  margin-top: 0.8rem;
+}
+
+.newsImages {
+  display: flex;
+  overflow: hidden;
+  border-radius: 2.5rem;
+}
+
+.newsImages div {
+  display: flex;
+}
+
+.newsImage {
+  width: 625px;
+  height: 30rem;
+  background-size: cover;
+}
