@@ -1,3 +1,4 @@
+import Button from '../../components/Button/Button';
 import styles from './ChikenClub.module.css';
 
 export default () => {
@@ -17,11 +18,7 @@ export default () => {
           </button>
         </div>
         <div className={styles.chikenClubLoginButton}>
-          <button>
-            <div className={styles.buttonContent}>
-              <span>Войти</span>
-            </div>
-          </button>
+          <Button>Войти</Button>
         </div>
         <div className={styles.chikenClubAd}></div>
         <div className={styles.chikenClubIcon}></div>

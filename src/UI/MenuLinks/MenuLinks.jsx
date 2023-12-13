@@ -30,12 +30,19 @@ export default () => {
           {menuLinks.map((link, index) => {
             if (index === 0) {
               return (
-                <p className={[styles.subText, styles.selectedLink].join(" ")}>
+                <p
+                  className={[styles.subText, styles.selectedLink].join(" ")}
+                  key={link}
+                >
                   {link}
                 </p>
               );
             }
-            return <p className={styles.subText}>{link}</p>;
+            return (
+              <p className={styles.subText} key={link}>
+                {link}
+              </p>
+            );
           })}
         </div>
       </div>
