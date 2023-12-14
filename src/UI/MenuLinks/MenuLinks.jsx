@@ -25,25 +25,27 @@ export default () => {
           <h1 className={styles.h1}>Меню</h1>
         </div>
       </div>
-      <div className={styles.menuLinks}>
-        <div className={styles.linksWrap}>
-          {menuLinks.map((link, index) => {
-            if (index === 0) {
+      <div className="stickyMenu">
+        <div className={styles.menuLinks}>
+          <div className={styles.linksWrap}>
+            {menuLinks.map((link, index) => {
+              if (index === 0) {
+                return (
+                  <p
+                    className={[styles.subText, styles.selectedLink].join(" ")}
+                    key={link}
+                  >
+                    {link}
+                  </p>
+                );
+              }
               return (
-                <p
-                  className={[styles.subText, styles.selectedLink].join(" ")}
-                  key={link}
-                >
+                <p className={styles.subText} key={link}>
                   {link}
                 </p>
               );
-            }
-            return (
-              <p className={styles.subText} key={link}>
-                {link}
-              </p>
-            );
-          })}
+            })}
+          </div>
         </div>
       </div>
     </div>

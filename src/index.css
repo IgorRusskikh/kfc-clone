@@ -18,4 +18,11 @@
 
 body {
   margin: 0;
+  position: relative;
+}
+
+.condensed {
+  font-weight: 500;
+  margin-left: 2rem;
+  font-size: 1.6rem;
 }
