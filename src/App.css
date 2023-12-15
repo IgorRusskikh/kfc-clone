@@ -75,6 +75,11 @@
   color: #e4002b;
 }
 
+.footerStores {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .footerStores a {
   margin-left: 0.5rem;
 }
