@@ -7,7 +7,12 @@ export default ({ children, items }) => {
       <div className="condensed">{children}</div>
       <div className={styles.menuListGrid}>
         {items.map((item) => (
-          <MenuItem image={item.image} name={item.name} price={item.price} />
+          <MenuItem
+            key={item._id}
+            image={item.image}
+            name={item.name}
+            price={item.price}
+          />
         ))}
       </div>
     </div>

@@ -1,5 +1,7 @@
 import "./App.css";
 
+import { useEffect, useState } from "react";
+
 import AppGalleryLogo from "./components/AppStoreLogo/AppStoreLogo";
 import AppStoreLogo from "./components/AppStoreLogo/AppStoreLogo";
 import ChikenClub from "./UI/ChikenClub/ChikenClub";
@@ -8,9 +10,20 @@ import Header from "./UI/Header/Header";
 import KfcManLogo from "./components/KfcManLogo/KfcManLogo";
 import MenuLinks from "./UI/MenuLinks/MenuLinks";
 import MenuList from "./UI/MenuList/MenuList";
+import MenuService from "./API/MenuService";
 import NewsBlock from "./UI/NewsBlock/NewsBlock";
 
 function App() {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    const fetchMenu = async () => {
+      setCategories(await MenuService.fetchCategories());
+    };
+
+    fetchMenu();
+  }, []);
+
   const footerContent = [
     {
       header: "Компания",
@@ -41,7 +54,7 @@ function App() {
     <>
       <Header />
       <NewsBlock />
-      <MenuLinks />
+      <MenuLinks categories={categories} />
       <ChikenClub />
       <MenuList />
       <div className="footerContainer">
@@ -55,7 +68,7 @@ function App() {
             {footerContent.map((column, index) => (
               <>
                 {index === 2 && (
-                  <div className="kfcLogo" key={index}>
+                  <div className="kfcLogo" key={index + 10}>
                     <KfcManLogo />
                   </div>
                 )}

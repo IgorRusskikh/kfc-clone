@@ -7,6 +7,11 @@ const ProductSchema = mongoose.Schema({
     unique: true,
     maxLength: 255,
   },
+  category: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "ProductCategory",
+  },
+  image: String,
   price: {
     type: Number,
     min: 0,

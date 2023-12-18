@@ -1,23 +1,6 @@
 import styles from "./MenuLinks.module.css";
 
-export default () => {
-  const menuLinks = [
-    "Новинки",
-    "Ланчи и Комбо",
-    "Баскеты",
-    "Бургеры",
-    "Твистеры",
-    "Сочная курица",
-    "Картофель и Снэки",
-    "Соусы",
-    "Холодные Напитки",
-    "Мороженое",
-    "Милкшейки",
-    "Десерты",
-    "Кофе и чай",
-    "Выгодные хиты",
-  ];
-
+export default ({ categories }) => {
   return (
     <div className={styles.mainContentContainer}>
       <div className={styles.menuContainer}>
@@ -28,20 +11,20 @@ export default () => {
       <div className="stickyMenu">
         <div className={styles.menuLinks}>
           <div className={styles.linksWrap}>
-            {menuLinks.map((link, index) => {
+            {categories.map((category, index) => {
               if (index === 0) {
                 return (
                   <p
                     className={[styles.subText, styles.selectedLink].join(" ")}
-                    key={link}
+                    key={category.order}
                   >
-                    {link}
+                    {category.name}
                   </p>
                 );
               }
               return (
-                <p className={styles.subText} key={link}>
-                  {link}
+                <p className={styles.subText} key={category.order}>
+                  {category.name}
                 </p>
               );
             })}
