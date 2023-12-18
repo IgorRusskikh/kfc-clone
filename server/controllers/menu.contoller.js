@@ -44,7 +44,9 @@ exports.appendMenuItem = async (req, res) => {
     });
   } catch (err) {
     console.log(err);
-    return res.json(P);
+    return res.json({
+      message: "Не удалось добавить продукт. Попробуйте позже",
+    });
   }
 };
 
