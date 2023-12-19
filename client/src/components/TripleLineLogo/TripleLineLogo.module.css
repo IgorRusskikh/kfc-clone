@@ -1,0 +1,13 @@
+.logoContainer {
+  width: 100%;
+  display: flex;
+  gap: 2.6875rem;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.logoLine {
+  width: 2rem;
+  height: 4.5rem;
+  background-color: #e4002b;
+}

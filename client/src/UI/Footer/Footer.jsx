@@ -2,17 +2,14 @@ import AppGalleryLogo from "../../components/AppStoreLogo/AppStoreLogo";
 import AppStoreLogo from "../../components/AppStoreLogo/AppStoreLogo";
 import GooglePlayLogo from "../../components/GooglePlayLogo/GooglePlayLogo";
 import KfcManLogo from "../../components/KfcManLogo/KfcManLogo";
+import TripleLineLogo from "../../components/TripleLineLogo/TripleLineLogo";
 import styles from "./Footer.module.css";
 
 export default () => {
   return (
     <div className={styles.footerContainer}>
       <div className={styles.footer}>
-        <div className={styles.footerLogo}>
-          <div className={styles.logoLine}></div>
-          <div className={styles.logoLine}></div>
-          <div className={styles.logoLine}></div>
-        </div>
+        <TripleLineLogo />
         <div className={styles.footerContent}>
           {footerContent.map((column, index) => (
             <>
