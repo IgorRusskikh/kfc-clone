@@ -1,0 +1,46 @@
+.imageContainer {
+  width: 24.625rem;
+  height: 24.625rem;
+  position: relative;
+  background-color: #efefef;
+}
+
+.imageProductPrice {
+  color: #fff;
+  top: 1.5rem;
+  display: flex;
+  right: 1.5rem;
+  min-width: 5rem;
+  min-height: 5rem;
+  font-size: 1.5rem;
+  position: absolute;
+  border-radius: 50%;
+  align-items: center;
+  font-family: Cera Pro;
+  background-color: #000;
+  justify-content: center;
+}
+
+.currency {
+  font-size: 1.2rem;
+  margin: 0 0 0.2rem 0.2rem;
+}
+
+.productImage {
+  top: 9rem;
+  left: 2rem;
+  max-width: 20rem;
+  max-height: 20rem;
+  position: absolute;
+}
+
+.goBackArrow {
+  left: -5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  top: 12.3125rem;
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("https://kfc.ru/static/media/arrow-back.70b88e99b16.svg");
+}

@@ -10,42 +10,6 @@
   width: 33.25rem;
 }
 
-.imageContainer {
-  width: 24.625rem;
-  height: 24.625rem;
-  position: relative;
-  background-color: #efefef;
-}
-
-.imageProductPrice {
-  color: #fff;
-  top: 1.5rem;
-  display: flex;
-  right: 1.5rem;
-  min-width: 5rem;
-  min-height: 5rem;
-  font-size: 1.5rem;
-  position: absolute;
-  border-radius: 50%;
-  align-items: center;
-  font-family: Cera Pro;
-  background-color: #000;
-  justify-content: center;
-}
-
-.currency {
-  font-size: 1.2rem;
-  margin: 0 0 0.2rem 0.2rem;
-}
-
-.productImage {
-  top: 9rem;
-  left: 2rem;
-  max-width: 20rem;
-  max-height: 20rem;
-  position: absolute;
-}
-
 .productInfo {
   display: flex;
   flex-direction: column;
@@ -61,44 +25,6 @@
 .productDescriptionContainer {
   display: flex;
   flex-direction: column;
-}
-
-.addToCartContainer {
-  gap: 2rem;
-  display: flex;
-  align-items: center;
-  margin: 0.5rem 0 3rem 0;
-}
-
-.setQuantity {
-  display: flex;
-  height: 2.5rem;
-  width: 11.25rem;
-  align-items: center;
-  border-radius: 10rem;
-  background-color: #000;
-  justify-content: center;
-}
-
-.removeOneBtn, .addOneBtn {
-  opacity: .5;
-  border: none;
-  outline: none;
-  border-radius: 10rem;
-  background-color: transparent;
-}
-
-.currentQuantity {
-  color: #fff;
-  width: 7rem;
-  display: flex;
-  justify-content: center;
-}
-
-.addToCartBtn {
-  font-size: 3rem;
-  font-weight: 400;
-  font-family: sans-serif;
 }
 
 .switchProductInfo {
@@ -124,6 +50,3 @@
   margin-bottom: 1rem;
 }
 
-.descritionContent {
-  margin-bottom: 2rem;
-}

@@ -1,0 +1,37 @@
+.addToCartContainer {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0 3rem 0;
+}
+
+.setQuantity {
+  display: flex;
+  height: 2.5rem;
+  width: 11.25rem;
+  align-items: center;
+  border-radius: 10rem;
+  background-color: #000;
+  justify-content: center;
+}
+
+.removeOneBtn, .addOneBtn {
+  opacity: .5;
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+  background-color: transparent;
+}
+
+.currentQuantity {
+  color: #fff;
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+}
+
+.addToCartBtn {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: sans-serif;
+}

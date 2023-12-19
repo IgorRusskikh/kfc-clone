@@ -10,12 +10,12 @@ export default () => {
             y1="4.839%"
             y2="71.968%"
           >
-            <stop offset="0%" stop-color="#00A0FF"></stop>
-            <stop offset=".657%" stop-color="#00A1FF"></stop>
-            <stop offset="26.01%" stop-color="#00BEFF"></stop>
-            <stop offset="51.22%" stop-color="#00D2FF"></stop>
-            <stop offset="76.04%" stop-color="#00DFFF"></stop>
-            <stop offset="100%" stop-color="#00E3FF"></stop>
+            <stop offset="0%" stopColor="#00A0FF"></stop>
+            <stop offset=".657%" stopColor="#00A1FF"></stop>
+            <stop offset="26.01%" stopColor="#00BEFF"></stop>
+            <stop offset="51.22%" stopColor="#00D2FF"></stop>
+            <stop offset="76.04%" stopColor="#00DFFF"></stop>
+            <stop offset="100%" stopColor="#00E3FF"></stop>
           </linearGradient>
           <linearGradient
             id="b"
@@ -24,10 +24,10 @@ export default () => {
             y1="49.428%"
             y2="49.428%"
           >
-            <stop offset="0%" stop-color="#FFE000"></stop>
-            <stop offset="40.87%" stop-color="#FFBD00"></stop>
-            <stop offset="77.54%" stop-color="#FFA500"></stop>
-            <stop offset="100%" stop-color="#FF9C00"></stop>
+            <stop offset="0%" stopColor="#FFE000"></stop>
+            <stop offset="40.87%" stopColor="#FFBD00"></stop>
+            <stop offset="77.54%" stopColor="#FFA500"></stop>
+            <stop offset="100%" stopColor="#FF9C00"></stop>
           </linearGradient>
           <linearGradient
             id="c"
@@ -36,8 +36,8 @@ export default () => {
             y1="17.815%"
             y2="194.393%"
           >
-            <stop offset="0%" stop-color="#FF3A44"></stop>
-            <stop offset="100%" stop-color="#C31162"></stop>
+            <stop offset="0%" stopColor="#FF3A44"></stop>
+            <stop offset="100%" stopColor="#C31162"></stop>
           </linearGradient>
           <linearGradient
             id="d"
@@ -46,11 +46,11 @@ export default () => {
             y1="-54.527%"
             y2="24.69%"
           >
-            <stop offset="0%" stop-color="#32A071"></stop>
-            <stop offset="6.85%" stop-color="#2DA771"></stop>
-            <stop offset="47.62%" stop-color="#15CF74"></stop>
-            <stop offset="80.09%" stop-color="#06E775"></stop>
-            <stop offset="100%" stop-color="#00F076"></stop>
+            <stop offset="0%" stopColor="#32A071"></stop>
+            <stop offset="6.85%" stopColor="#2DA771"></stop>
+            <stop offset="47.62%" stopColor="#15CF74"></stop>
+            <stop offset="80.09%" stopColor="#06E775"></stop>
+            <stop offset="100%" stopColor="#00F076"></stop>
           </linearGradient>
         </defs>
         <g fill="none" fill-rule="nonzero">
@@ -105,7 +105,7 @@ export default () => {
           <path
             fill="#FFF"
             stroke="#FFF"
-            stroke-width="0.2"
+            strokeWidth="0.2"
             d="M41.1 13.658h-.7v-2.05h.6c.5-.41.8-1.23.8-2.358V6.175h4v5.433h.7v2.05h-.7v-1.333h-4.6v1.333h-.1zm1.4-4.408c0 .922-.2 1.742-.6 2.357h3V6.995h-2.5V9.25h.1zM52.4 11.505c-.6.615-1.3.922-2.2.922-.9 0-1.6-.307-2.2-.922-.6-.615-.9-1.333-.9-2.255 0-.922.3-1.64.9-2.255.6-.615 1.3-.923 2.2-.923.9 0 1.6.308 2.2.923.6.615.9 1.333.9 2.255 0 .922-.3 1.64-.9 2.255zm-3.8-.513c.4.41 1 .718 1.6.718.6 0 1.2-.205 1.6-.718.4-.41.7-1.025.7-1.742 0-.717-.2-1.332-.7-1.742-.4-.41-1-.718-1.6-.718-.6 0-1.2.205-1.6.718-.4.41-.7 1.025-.7 1.742 0 .717.2 1.332.7 1.742zM57.2 12.428c-.9 0-1.6-.308-2.2-.923-.6-.615-.9-1.333-.9-2.255 0-.922.3-1.64.9-2.255.6-.615 1.3-.923 2.2-.923.9 0 1.6.308 2.2 1.026l-.5.512c-.4-.513-1-.82-1.7-.82s-1.2.205-1.7.718c-.5.41-.7 1.025-.7 1.742 0 .717.2 1.332.7 1.742.4.41 1 .718 1.7.718s1.3-.308 1.8-.923l.5.513c-.3.307-.6.615-1 .82-.4.205-.8.308-1.3.308zM62.7 12.325h-.8V6.893h-1.7v-.718h4.1v.718h-1.7v5.432zM69.6 6.175l-2.3 5.228c-.3.717-.8 1.127-1.4 1.127-.2 0-.4 0-.6-.102l.2-.718c.1.102.3.102.4.102.2 0 .3 0 .4-.102.1-.103.2-.205.3-.41l.2-.513-2-4.51h.9l1.5 3.485 1.4-3.485h1v-.102zM70.5 12.325v-6.15h4.3v6.15H74V6.893h-2.8v5.432zM76.2 12.325v-6.15h.8V8.84h3V6.175h.8v6.15H80V9.557h-3v2.768zM87.1 11.505c-.6.615-1.3.922-2.2.922-.9 0-1.6-.307-2.2-.922-.6-.615-.9-1.333-.9-2.255 0-.922.3-1.64.9-2.255.6-.615 1.3-.923 2.2-.923.9 0 1.6.308 2.2.923.6.615.9 1.333.9 2.255-.1.922-.4 1.64-.9 2.255zm-3.9-.513c.4.41 1 .718 1.6.718.6 0 1.2-.205 1.6-.718.4-.41.7-1.025.7-1.742 0-.717-.2-1.332-.7-1.742-.4-.41-1-.718-1.6-.718-.6 0-1.2.205-1.6.718-.4.41-.7 1.025-.7 1.742 0 .717.3 1.332.7 1.742zM91.1 12.325v-6.15h2.2c.5 0 .9.205 1.2.513.3.307.5.717.5 1.23 0 .307-.1.512-.2.82-.1.205-.3.41-.6.512.3.102.5.307.7.512.2.205.3.513.3.923 0 .512-.2.922-.5 1.23-.4.308-.8.513-1.3.513h-2.3v-.103zm.8-3.485h1.4c.3 0 .5-.102.7-.307.2-.205.3-.41.3-.615 0-.205-.1-.41-.3-.615-.2-.205-.4-.308-.7-.308h-1.4V8.84zm0 2.768h1.6c.3 0 .5-.103.7-.308.2-.205.3-.41.3-.718 0-.205-.1-.512-.3-.717-.2-.205-.4-.308-.7-.308H92v2.05h-.1z"
           ></path>
         </g>
