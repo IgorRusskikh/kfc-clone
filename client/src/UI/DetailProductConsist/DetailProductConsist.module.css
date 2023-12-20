@@ -1,0 +1,29 @@
+.energyValueHeader {
+  color: #939290;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.energyValue {
+  gap: 1.5rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.energyValue span {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.mr8 {
+  margin-right: 0.5rem;
+}
+
+.productConsistDetail {
+  font-size: 0.9rem;
+}
+
+.allergens {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}

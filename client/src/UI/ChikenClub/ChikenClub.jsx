@@ -1,5 +1,5 @@
-import Button from '../../components/Button/Button';
-import styles from './ChikenClub.module.css';
+import Button from "../../components/Button/Button";
+import styles from "./ChikenClub.module.css";
 
 export default () => {
   return (

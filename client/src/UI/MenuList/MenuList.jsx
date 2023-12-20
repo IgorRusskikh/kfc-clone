@@ -23,10 +23,7 @@ export default ({ categories }) => {
         });
       });
 
-      setProducts((prevProducts) => {
-        // Используем колбэк для доступа к предыдущему состоянию
-        console.log(prevProducts);
-
+      setProducts(() => {
         return updatedProducts;
       });
     };

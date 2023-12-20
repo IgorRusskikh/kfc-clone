@@ -1,4 +1,5 @@
-import TripleLineLogo from '../../components/TripleLineLogo/TripleLineLogo'
+import { Link } from "react-router-dom";
+import TripleLineLogo from "../../components/TripleLineLogo/TripleLineLogo";
 import styles from "./DetailProductImage.module.css";
 
 export default () => {
@@ -15,7 +16,7 @@ export default () => {
           alt=""
         />
       </div>
-      <div className={styles.goBackArrow}></div>
+      <Link className={styles.goBackArrow} to={"/"}></Link>
     </div>
   );
 };

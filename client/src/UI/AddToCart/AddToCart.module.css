@@ -19,6 +19,8 @@
   opacity: .5;
   border: none;
   outline: none;
+  display: flex;
+  align-items: center;
   border-radius: 10rem;
   background-color: transparent;
 }

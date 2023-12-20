@@ -1,9 +1,10 @@
 import Button from "../../components/Button/Button";
+import { Link } from "react-router-dom";
 import styles from "./MenuItem.module.css";
 
 export default ({ image, name, price }) => {
   return (
-    <a className={styles.menuListCard}>
+    <Link className={styles.menuListCard} to={"/detail"}>
       <div className={styles.menuListCardPhoto}>
         <img src={image} alt="" />
       </div>
@@ -19,6 +20,6 @@ export default ({ image, name, price }) => {
           </Button>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
