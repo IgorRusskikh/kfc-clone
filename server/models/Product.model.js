@@ -24,23 +24,21 @@ const ProductSchema = mongoose.Schema({
     type: String,
     maxLength: 1024,
   },
-  caloricValue: {
-    calories: {
-      type: Number,
-      min: 0,
-    },
-    proteins: {
-      type: Number,
-      min: 0,
-    },
-    fats: {
-      type: Number,
-      min: 0,
-    },
-    carbohydrates: {
-      type: Number,
-      min: 0,
-    },
+  calories: {
+    type: Number,
+    min: 0,
+  },
+  proteins: {
+    type: Number,
+    min: 0,
+  },
+  fats: {
+    type: Number,
+    min: 0,
+  },
+  carbohydrates: {
+    type: Number,
+    min: 0,
   },
   composition: [String],
   allergens: [String],

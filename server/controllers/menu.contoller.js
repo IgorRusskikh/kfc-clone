@@ -22,6 +22,19 @@ exports.getMenu = async (req, res) => {
   }
 };
 
+exports.getMenuItem = async (req, res) => {
+  try {
+    const item = await Product.findById(req.params?.id);
+
+    console.log(item);
+
+    return res.json({});
+  } catch (err) {
+    console.log(err);
+    return res.json({});
+  }
+};
+
 exports.appendMenuItem = async (req, res) => {
   try {
     const productCategory = await ProductCategory.findById(req.body.category);
@@ -32,7 +45,10 @@ exports.appendMenuItem = async (req, res) => {
       price: req.body.price,
       weight: req.body.weight,
       description: req.body.description,
-      caloricValue: req.body.caloricValue,
+      calories: req.body.calories,
+      proteins: req.body.proteins,
+      fats: req.body.fats,
+      carbohydrates: req.body.carbohydrates,
       composition: req.body.composition,
       allergens: req.body.allergens,
     });
