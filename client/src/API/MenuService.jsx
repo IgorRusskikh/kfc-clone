@@ -14,4 +14,12 @@ export default class {
 
     return menu.data?.menu;
   }
+
+  static async fetchMenuItem() {
+    const menuItem = await axios.get(
+      "http://localhost:3000/menu/658355906f5efd0bce8b28d8"
+    );
+
+    return menuItem.data?.product;
+  }
 }

@@ -1,34 +1,32 @@
 import styles from "./DetailProductConsist.module.css";
 
-export default () => {
+export default ({ productConsist }) => {
   return (
     <div className={styles.productConsistInfo}>
       <div className={styles.energyValueHeader}>КБЖУ на 100 грамм</div>
       <div className={styles.energyValue}>
         <div>
           <span className={styles.mr8}>Ккал:</span>
-          <span>213</span>
+          <span>{productConsist.calories}</span>
         </div>
         <div>
           <span className={styles.mr8}>Б:</span>
-          <span>10.8 г</span>
+          <span>{productConsist.proteins} г</span>
         </div>
         <div>
           <span className={styles.mr8}>Ж:</span>
-          <span>9.7 г</span>
+          <span>{productConsist.fats} г</span>
         </div>
         <div>
           <span className={styles.mr8}>У:</span>
-          <span>20.7 г</span>
+          <span>{productConsist.carbohydrates} г</span>
         </div>
       </div>
       <div className={styles.productConsistDetail}>
-        Состав: Огурцы маринованные, Стрипсы из куриного филе оригинальные,
-        Салат Айсберг, Картофель фри, Тортилья пшеничная, Томаты свежие, Соус
-        "Со вкусом Трюфеля"
+        Состав: {productConsist.composition.join(", ")}
       </div>
       <div className={styles.allergens}>
-        Аллергены: Глютен, Молоко, Сельдерей, Яйца, Горчица
+        Аллергены: {productConsist.allergens.join(", ")}
       </div>
     </div>
   );

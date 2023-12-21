@@ -26,9 +26,9 @@ exports.getMenuItem = async (req, res) => {
   try {
     const item = await Product.findById(req.params?.id);
 
-    console.log(item);
-
-    return res.json({});
+    return res.json({
+      product: item,
+    });
   } catch (err) {
     console.log(err);
     return res.json({});

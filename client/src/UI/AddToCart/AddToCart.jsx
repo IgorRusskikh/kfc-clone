@@ -4,7 +4,7 @@ import SvgPlus from "../../components/SvgPlus/SvgPlus";
 import styles from "./AddToCart.module.css";
 import { useState } from "react";
 
-export default () => {
+export default ({ price }) => {
   let [quantity, setQuantity] = useState(1);
 
   const removeOne = () => {
@@ -20,8 +20,10 @@ export default () => {
   return (
     <div className={styles.addToCartContainer}>
       <div className={styles.setQuantity}>
-        {quantity === 1 && console.log(1)}
-        <div className={styles.removeOneContainer + (quantity == 1 && " disabled")} onClick={removeOne}>
+        <div
+          className={styles.removeOneContainer + (quantity == 1 && " disabled")}
+          onClick={removeOne}
+        >
           <button className={styles.removeOneBtn}>
             <SvgMinus />
           </button>
@@ -35,7 +37,7 @@ export default () => {
           </button>
         </div>
       </div>
-      <Button className={styles.addToCartBtn}>В корзину - 348p</Button>
+      <Button className={styles.addToCartBtn}>В корзину - {price}</Button>
     </div>
   );
 };

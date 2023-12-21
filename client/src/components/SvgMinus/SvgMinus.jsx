@@ -4,7 +4,7 @@ export default () => {
       <g fill="none" fill-rule="nonzero">
         <rect
           id="i-minus"
-          class="i-icon i-minus"
+          className="i-icon i-minus"
           width="12"
           height="2"
           x="2"

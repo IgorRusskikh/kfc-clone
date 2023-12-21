@@ -27,11 +27,19 @@
 }
 
 .productImage {
-  top: 9rem;
+  top: 4rem;
   left: 2rem;
+  width: 20rem;
+  display: flex;
+  height: 20rem;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.productImage img {
   max-width: 20rem;
   max-height: 20rem;
-  position: absolute;
 }
 
 .goBackArrow {

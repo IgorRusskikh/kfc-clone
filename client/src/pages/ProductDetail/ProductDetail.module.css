@@ -1,7 +1,9 @@
 .productDetail {
   display: flex;
+  min-height: 70vh;
   padding-top: 4rem;
   margin-top: 4.8rem;
+  height: fit-content;
   justify-content: center;
 }
 

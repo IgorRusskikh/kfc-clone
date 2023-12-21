@@ -4,7 +4,7 @@ import DetailProductDescrip from "../DetailProductDescrip/DetailProductDescrip";
 import styles from "./DetailProductInfo.module.css";
 import { useState } from "react";
 
-export default () => {
+export default ({ product }) => {
   const [isConsist, setIsConsist] = useState(false);
 
   const setConsist = () => {
@@ -18,10 +18,10 @@ export default () => {
   return (
     <div className={styles.productInfo}>
       <div className={styles.productNameContainer}>
-        <h1 className={styles.productName}>Мега ролл "Трюфель"</h1>
+        <h1 className={styles.productName}>{product.name}</h1>
       </div>
       <div className={styles.productDescriptionContainer}>
-        <AddToCart />
+        <AddToCart price={product.price} />
         <div className={styles.switchProductInfo}>
           <div
             className={
@@ -43,7 +43,14 @@ export default () => {
             Состав
           </div>
         </div>
-        {isConsist ? <DetailProductConsist /> : <DetailProductDescrip />}
+        {isConsist ? (
+          <DetailProductConsist productConsist={product} />
+        ) : (
+          <DetailProductDescrip
+            weight={product.weight}
+            description={product.description}
+          />
+        )}
       </div>
     </div>
   );
