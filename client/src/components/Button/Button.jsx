@@ -1,11 +1,11 @@
 import styles from "./Button.module.css";
 
-export default (props) => {
+export default ({ btnStyles, ...props }) => {
   return (
-    <button className={styles.redButton}>
+    <button style={{ ...btnStyles }} className={styles.redButton}>
       <div
         className={styles.redButtonContent}
-        style={{ width: props.width, height: props.height, ...props }}
+        style={{ width: props.width, height: props.height, ...props.style }}
       >
         <span style={{ fontFamily: "Cera Pro" }}>{props.children}</span>
       </div>

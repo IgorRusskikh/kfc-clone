@@ -29,8 +29,9 @@
   display: flex;
 }
 
-.headerMenu p {
+.headerMenu a {
   color: #6b6a68;
+  text-decoration: none;
 }
 
 .rightSideHeader {
