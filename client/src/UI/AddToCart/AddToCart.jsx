@@ -37,7 +37,9 @@ export default ({ price }) => {
           </button>
         </div>
       </div>
-      <Button className={styles.addToCartBtn}>В корзину - {price}</Button>
+      <Button className={styles.addToCartBtn} btnStyles={{ width: "20.75rem" }}>
+        В корзину - {price}
+      </Button>
     </div>
   );
 };

@@ -18,7 +18,7 @@ export default () => {
           </button>
         </div>
         <div className={styles.chikenClubLoginButton}>
-          <Button>Войти</Button>
+          <Button btnStyles={{ width: "18rem" }}>Войти</Button>
         </div>
         <div className={styles.chikenClubAd}></div>
         <div className={styles.chikenClubIcon}></div>

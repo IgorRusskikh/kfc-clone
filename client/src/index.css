@@ -26,3 +26,9 @@ body {
   margin-left: 2rem;
   font-size: 1.6rem;
 }
+
+a {
+  color: #6b6a68;
+  text-decoration: none;
+  cursor: pointer;
+}

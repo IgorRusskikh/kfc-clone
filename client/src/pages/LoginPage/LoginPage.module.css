@@ -1,0 +1,82 @@
+#page {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: rgb(227, 2, 2);
+  background: linear-gradient(135deg, rgba(227, 2, 2, 0.6474964985994398) 22%, rgba(255, 219, 87, 1) 100%);
+}
+
+.loginForm {
+  gap: 2rem;
+  display: flex;
+  max-width: 20.75rem;
+  border-radius: 24px;
+  min-height: 25.25rem;
+  background-color: #fff;
+  flex-direction: column;
+  padding: 4.125rem 5.75rem;
+}
+
+.headerForm {
+  font-weight: 600;
+  font-size: 1.1rem;
+  inline-size: 250px;
+  line-height: 1.4rem;
+}
+
+.fieldName {
+  font-size: 2rem;
+  font-family: Cera Pro;
+}
+
+.fieldLabel {
+  color: #6b6a68;
+  font-size: 0.875rem;
+}
+
+#phoneInput {
+  width: 19rem;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  font-family: Cera Pro;
+  padding: 1.0625rem 1rem;
+  background-color: #faf8f7;
+}
+
+#phoneInput::placeholder {
+  color: #b4b2b0;
+}
+
+.checkboxContainer {
+  gap: 12px;
+  width: 350px;
+  display: flex;
+  margin-top: 16px;
+}
+
+.checkbox {
+  margin: 4px;
+  height: 12px;
+  width: 13.38px;
+  border-radius: 4px;
+  border: 2px solid #b4b2b0;
+}
+
+.policy {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.bolderPolicy {
+  font-weight: 600;
+}
+
+.submit {
+  background-color: #6b6a68 !important;
+}
