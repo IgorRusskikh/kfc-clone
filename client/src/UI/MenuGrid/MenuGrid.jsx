@@ -1,7 +1,9 @@
+/* eslint-disable react/prop-types */
+
 import MenuItem from "../MenuItem/MenuItem";
 import styles from "./MenuGrid.module.css";
 
-export default ({ children, items }) => {
+export default function MenuGrid({ children, items }) {
   return (
     <div className={styles.menuListCategory}>
       <div className="condensed">{children}</div>
@@ -17,4 +19,4 @@ export default ({ children, items }) => {
       </div>
     </div>
   );
-};
+}

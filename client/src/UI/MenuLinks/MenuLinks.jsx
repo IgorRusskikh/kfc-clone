@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
+
 import styles from "./MenuLinks.module.css";
 
-export default ({ categories }) => {
+export default function MenuLinks({ categories }) {
   return (
     <div className={styles.mainContentContainer}>
       <div className={styles.menuContainer}>
@@ -33,4 +35,4 @@ export default ({ categories }) => {
       </div>
     </div>
   );
-};
+}

@@ -1,6 +1,8 @@
+/* eslint-disable react/prop-types */
+
 import styles from "./Button.module.css";
 
-export default ({ btnStyles, ...props }) => {
+export default function Button({ btnStyles, ...props }) {
   return (
     <button style={{ ...btnStyles }} className={styles.redButton}>
       <div
@@ -11,4 +13,4 @@ export default ({ btnStyles, ...props }) => {
       </div>
     </button>
   );
-};
+}

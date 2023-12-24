@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
+
+import { SvgMinus, SvgPlus } from "../../components/Svgs/Svgs";
+
 import Button from "../../components/Button/Button";
-import SvgMinus from "../../components/SvgMinus/SvgMinus";
-import SvgPlus from "../../components/SvgPlus/SvgPlus";
 import styles from "./AddToCart.module.css";
 import { useState } from "react";
 
-export default ({ price }) => {
+export default function AddToCart({ price }) {
   let [quantity, setQuantity] = useState(1);
 
   const removeOne = () => {
@@ -20,10 +22,7 @@ export default ({ price }) => {
   return (
     <div className={styles.addToCartContainer}>
       <div className={styles.setQuantity}>
-        <div
-          className={styles.removeOneContainer + (quantity == 1 && " disabled")}
-          onClick={removeOne}
-        >
+        <div className={styles.removeOneContainer} onClick={removeOne}>
           <button className={styles.removeOneBtn}>
             <SvgMinus />
           </button>
@@ -38,8 +37,8 @@ export default ({ price }) => {
         </div>
       </div>
       <Button className={styles.addToCartBtn} btnStyles={{ width: "20.75rem" }}>
-        В корзину - {price}
+        В корзину - {price * quantity}
       </Button>
     </div>
   );
-};
+}

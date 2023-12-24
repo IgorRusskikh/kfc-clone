@@ -19,7 +19,7 @@ exports.authorize = async (req, res) => {
       sendMail({
         to: "russkikh2.igor3.2003@gmail.com",
         subject: "Вход в KFC",
-        text: `Ссылка для входа: http://localhost:4000/confirm/${token.token}` 
+        text: `Ссылка для входа: http://localhost:4000/confirm/${token.token}`,
       });
 
       return res.json({

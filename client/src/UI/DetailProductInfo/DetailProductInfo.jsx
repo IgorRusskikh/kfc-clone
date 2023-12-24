@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
+
 import AddToCart from "../AddToCart/AddToCart";
 import DetailProductConsist from "../DetailProductConsist/DetailProductConsist";
 import DetailProductDescrip from "../DetailProductDescrip/DetailProductDescrip";
 import styles from "./DetailProductInfo.module.css";
 import { useState } from "react";
 
-export default ({ product }) => {
+export default function DetailProductInfo({ product }) {
   const [isConsist, setIsConsist] = useState(false);
 
   const setConsist = () => {
@@ -54,4 +56,4 @@ export default ({ product }) => {
       </div>
     </div>
   );
-};
+}

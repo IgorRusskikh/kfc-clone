@@ -1,7 +1,7 @@
 import Button from "../../components/Button/Button";
 import styles from "./LoginPage.module.css";
 
-export default () => {
+export default function LoginPage() {
   return (
     <div id={styles.page}>
       <div className={styles.loginForm}>
@@ -41,4 +41,4 @@ export default () => {
       </div>
     </div>
   );
-};
+}

@@ -7,15 +7,15 @@ import Header from "../../UI/Header/Header";
 import MenuService from "../../API/MenuService";
 import styles from "./ProductDetail.module.css";
 
-export default () => {
-  const [product, setProduct] = useState();
+export default function ProductDetail() {
+  const [product] = useState();
   const [detailProduct, setDetailProduct] = useState([]);
 
   useEffect(() => {
     const fetchMenuItem = async () => {
-      const s = await MenuService.fetchMenuItem();
+      const detailProduct = await MenuService.fetchMenuItem();
       setDetailProduct(() => {
-        return s;
+        return detailProduct;
       });
     };
 
@@ -36,4 +36,4 @@ export default () => {
       <Footer />
     </>
   );
-};
+}
