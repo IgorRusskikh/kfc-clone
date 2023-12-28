@@ -2,9 +2,13 @@
 
 import styles from "./Button.module.css";
 
-export default function Button({ btnStyles, ...props }) {
+export default function Button({ btnStyles, onClick, ...props }) {
   return (
-    <button style={{ ...btnStyles }} className={styles.redButton}>
+    <button
+      style={{ ...btnStyles }}
+      className={styles.redButton}
+      onClick={onClick}
+    >
       <div
         className={styles.redButtonContent}
         style={{ width: props.width, height: props.height, ...props.style }}

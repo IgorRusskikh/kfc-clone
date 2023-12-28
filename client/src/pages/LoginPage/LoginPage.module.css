@@ -80,3 +80,19 @@
 .submit {
   background-color: #6b6a68 !important;
 }
+
+.svgStar {
+  position: absolute;
+  width: 410px;
+  height: 440px;
+  left: 25px;
+  top: 30px;
+}
+
+.nugget__icon {
+  width: 363px;
+  height: 400px;
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+}

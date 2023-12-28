@@ -36,3 +36,12 @@ a {
 .mr8 {
   margin-right: 0.5rem;
 }
+
+.modalMessage {
+  position: absolute;
+  top: 2rem;
+  background-color: #ffffff;
+  width: 50rem;
+  padding: 1rem 1rem;
+  border-radius: 20px;
+}

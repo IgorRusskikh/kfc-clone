@@ -1,9 +1,32 @@
 import Button from "../../components/Button/Button";
+import { SvgLoginStar } from "../../components/Svgs/Svgs";
+import UserService from "../../API/UserService";
 import styles from "./LoginPage.module.css";
+import { useState } from "react";
 
 export default function LoginPage() {
+  const [email, setEmail] = useState("");
+  const [responseText, setResponseText] = useState("");
+
+  const login = async () => {
+    localStorage.setItem("userEmail", email);
+
+    setResponseText(await UserService.authorize(email));
+  };
+
   return (
     <div id={styles.page}>
+      <SvgLoginStar styles={styles.svgStar} />
+      {responseText && (
+        <div
+          className="modalMessage"
+          onClick={(event) => {
+            event.target.style["display"] = "none";
+          }}
+        >
+          {responseText}
+        </div>
+      )}
       <div className={styles.loginForm}>
         <div className={styles.headerForm}>
           Вход в системы ресторанов KFC и Rostic’s
@@ -18,6 +41,7 @@ export default function LoginPage() {
             type="text"
             name="phone"
             placeholder="+7 (000) 000-00-00"
+            onChange={(event) => setEmail(event.target.value)}
           />
           <div className={styles.checkboxContainer}>
             <span className={styles.checkbox}></span>
@@ -34,6 +58,7 @@ export default function LoginPage() {
               width: "100%",
               marginTop: "1.5rem",
             }}
+            onClick={login}
           >
             Получить код по смс
           </Button>
