@@ -16,27 +16,6 @@
   flex-direction: column;
 }
 
-.tipContainer {
-  font-weight: 900;
-  font-size: 2.6rem;
-  position: relative;
-  margin-bottom: 3rem;
-  border-radius: 1.4rem;
-  font-family: 'Cera Pro';
-  background-color: #f2f0ef;
-  border: 0.3rem solid #e0e0e0;
-  padding: 0.8rem 3.5rem 0.8rem 1.6rem;
-}
-
-.tipContainer button {
-  top: 0.3rem;
-  border: none;
-  outline: none;
-  right: 0.1rem;
-  background: none;
-  position: absolute;
-}
-
 .buttonContent {
   width: 17rem;
   display: flex;

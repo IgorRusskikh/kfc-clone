@@ -1,3 +1,156 @@
 .profileInfoBlock {
-  
+ display:flex;
+margin:0 20rem;
+margin-top:3.55rem;
+justify-content:center; 
+}
+
+.profileInfoContainer {
+ display:flex;
+gap:55.75rem;
+padding:2rem 0 3rem 0;
+justify-content:space-between; 
+}
+
+.profileName {
+ display:flex;
+align-items:flex-end; 
+}
+
+.profileNameHeader {
+ height:68px;
+font-size:3rem;
+margin-right:2.5rem;
+font-family:'Cera Pro'; 
+}
+
+.profileNameValue {
+ margin-bottom:8px; 
+}
+
+.profileActionContainer {
+ display:flex;
+align-items:center; 
+}
+
+.profileActionContainer button {
+ width:3rem;
+height:3rem;
+border:none;
+outline:none;
+border-radius:50%;
+margin-left:1.5rem;
+box-shadow:0 0.4rem 0.6rem 0 rgba(0, 0, 0, .08); 
+}
+
+.editBtn {
+ background-size:1.5rem;
+background:#fff no-repeat 50%;
+background-image:url('https://www.kfc.ru/static/media/edit.cd26aaa4727.svg'); 
+}
+
+.exitBtn {
+ background-size:1.5rem;
+background:#fff no-repeat 50%;
+background-image:url('https://www.kfc.ru/static/media/exit.bef6e10f161.svg'); 
+}
+
+.orderInfoBlock {
+ background-color:#f7f6f5;
+padding:4rem 34rem 4rem 34rem; 
+}
+
+.orderInfoContainer {
+ display:flex;
+margin-bottom:1.5rem;
+flex-direction:column;
+justify-content:center; 
+}
+
+.pointsContainer {
+ display:flex;
+padding:1rem 0;
+margin:0 6.75rem;
+position:relative;
+align-items:center;
+border-radius:20px;
+flex-direction:column;
+background-size:cover;
+border:solid #c6c6c6 3px;
+background-color:rgba(0, 125, 215, 0.7);
+background-image:url('https://www.kfc.ru/static/media/loyalty-background-grey.b055b14ef28.svg'); 
+}
+
+.pointsQuantity {
+ font-weight:600;
+margin-top:0.5rem;
+font-size:1.125rem; 
+}
+
+.orderCard {
+ padding:2rem 3.5rem;
+margin-bottom:2.5rem;
+background-color:#fff; 
+}
+
+.metaOrderInfo {
+ display:flex;
+padding-bottom:2rem;
+justify-content:space-between; 
+}
+
+.orderContentContainer {
+ display:flex;
+padding:2rem 0;
+flex-direction:column; 
+}
+
+.orderContent {
+ display:flex;
+margin-bottom:1.3rem;
+justify-content:space-between; 
+}
+
+.productName {
+ color:#939290;
+font-size:1.3rem; 
+}
+
+.productPrice {
+ font-weight:600;
+font-size:1.4rem; 
+}
+
+.pointsReceived {
+ display:flex;
+margin-bottom:1rem;
+justify-content:space-between; 
+}
+
+.pointsReceivedHeader {
+ color:#939290;
+font-size:1.3rem; 
+}
+
+.receivedPointsQuantity {
+ color:#e4002b;
+font-size:2rem;
+font-weight:800; 
+}
+
+.totalPriceContainer {
+ display:flex;
+align-items:center;
+margin-bottom:1.5rem;
+justify-content:space-between; 
+}
+
+.totalPriceHeader {
+ font-weight:500;
+font-size:1.5rem; 
+}
+
+.totalPrice {
+ font-size:2.5rem;
+font-family:"Cera Pro"; 
 }
