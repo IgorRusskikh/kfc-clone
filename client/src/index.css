@@ -33,15 +33,96 @@ a {
   text-decoration: none;
 }
 
+.m20 {
+  margin: 0 20rem;
+}
+
+.mt16 {
+  margin-top: 1rem;
+}
+
+.mt32 {
+  margin-top: 1rem;
+}
+
 .mr8 {
   margin-right: 0.5rem;
 }
 
-.modalMessage {
-  position: absolute;
-  top: 2rem;
+.mr16 {
+  margin-right: 1rem;
+}
+
+.mr32 {
+  margin-right: 2rem;
+}
+
+.mr48 {
+  margin-right: 3rem;
+}
+
+.mb16 {
+  margin-bottom: 1rem;
+}
+
+.mb32 {
+  margin-bottom: 2rem;
+}
+
+.ml8 {
+  margin-left: 0.5rem;
+}
+
+.ml16 {
+  margin-left: 1rem;
+}
+
+.ml32 {
+  margin-left: 2rem;
+}
+
+.bgRed {
+  background-color: #e4002b;
+}
+
+.bgWhite {
   background-color: #ffffff;
+}
+
+.bgGray {
+  background-color: #939290;
+}
+
+.grayTxt {
+  color: #939290;
+}
+
+.whiteTxt {
+  color: #ffffff;
+}
+
+.blackTxt * {
+  color: #000000;
+}
+
+.ceraFont {
+  font-family: "Cera Pro";
+}
+
+.btnPrimary {
+  border: none;
+  color: #ffffff;
+  height: 3.5rem;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modalMessage {
+  top: 2rem;
   width: 50rem;
+  position: absolute;
   padding: 1rem 1rem;
   border-radius: 20px;
+  background-color: #ffffff;
 }

@@ -2,7 +2,6 @@
 
 import { SvgMinus, SvgPlus } from "../../components/Svgs/Svgs";
 
-import Button from "../../components/Button/Button";
 import styles from "./AddToCart.module.css";
 import { useState } from "react";
 
@@ -36,9 +35,9 @@ export default function AddToCart({ price }) {
           </button>
         </div>
       </div>
-      <Button className={styles.addToCartBtn} btnStyles={{ width: "20.75rem" }}>
+      <button className="btnPrimary bgRed ceraFont">
         В корзину - {price * quantity}
-      </Button>
+      </button>
     </div>
   );
 }

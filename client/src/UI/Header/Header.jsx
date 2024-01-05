@@ -17,29 +17,29 @@ export default function Header() {
   ];
 
   return (
-    <div id={styles.header}>
-      <div className={styles.header}>
+    <div id={styles.header} className="bgWhite">
+      <div className={styles.header + " m20"}>
         <div className={styles.leftSideHeader}>
           <Link to="/">
             <SvgKfcLogo />
           </Link>
           <div className={styles.headerMenu}>
             {menuItems.map((item) => (
-              <Link key={item.name} to={item.link}>
+              <Link key={item.name} to={item.link} className="ml32">
                 {item.name}
               </Link>
             ))}
           </div>
         </div>
         <div className={styles.rightSideHeader}>
-          <button className={styles.headerRedButton}>
+          <button className="btnPrimary bgRed whiteTxt">
             <SvgPlacePoint />
-            <span>Выбрать способ получения</span>
+            <span className="ml8">Выбрать способ получения</span>
           </button>
           <Link to="/login">
-            <button>
+            <button className="btnPrimary blackTxt">
               <SvgPersonIcon />
-              <span>Войти</span>
+              <span className="ml8">Войти</span>
             </button>
           </Link>
         </div>

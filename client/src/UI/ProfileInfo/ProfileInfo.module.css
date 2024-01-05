@@ -1,0 +1,56 @@
+.profileInfoBlock {
+  display: flex;
+  margin: 0 20rem;
+  margin-top: 3.55rem;
+  justify-content: center;
+}
+
+.profileInfoContainer {
+  display: flex;
+  gap: 55.75rem;
+  padding: 2rem 0 3rem 0;
+  justify-content: space-between;
+}
+
+.profileName {
+  display: flex;
+  align-items: flex-end;
+}
+
+.profileNameHeader {
+  height: 68px;
+  font-size: 3rem;
+  margin-right: 2.5rem;
+  font-family: 'Cera Pro';
+}
+
+.profileNameValue {
+  margin-bottom: 8px;
+}
+
+.profileActionContainer {
+  display: flex;
+  align-items: center;
+}
+
+.profileActionContainer button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  margin-left: 1.5rem;
+  box-shadow: 0 0.4rem 0.6rem 0 rgba(0, 0, 0, .08);
+}
+
+.editBtn {
+  background-size: 1.5rem;
+  background: #fff no-repeat 50%;
+  background-image: url('https://www.kfc.ru/static/media/edit.cd26aaa4727.svg');
+}
+
+.exitBtn {
+  background-size: 1.5rem;
+  background: #fff no-repeat 50%;
+  background-image: url('https://www.kfc.ru/static/media/exit.bef6e10f161.svg');
+}

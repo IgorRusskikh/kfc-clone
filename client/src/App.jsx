@@ -10,12 +10,12 @@ import ProfilePage from "./pages/ProfilePage/ProfilePage";
 function App() {
   return (
     <>
-      <ProfilePage />
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/detail" element={<ProductDetail />} />
         <Route path="/login" element={<LoginPage />} />
-      </Routes> */}
+        <Route path="/profile" element={<ProfilePage />} />
+      </Routes>
     </>
   );
 }

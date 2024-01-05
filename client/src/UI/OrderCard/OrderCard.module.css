@@ -1,0 +1,68 @@
+.orderCard {
+  padding: 2rem 3.5rem;
+  margin-bottom: 2.5rem;
+  background-color: #fff;
+}
+
+.metaOrderInfo {
+  display: flex;
+  padding-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.orderContentContainer {
+  display: flex;
+  padding: 1.5rem 0;
+  flex-direction: column;
+  border-top: solid #efefef 1px;
+}
+
+.orderContent {
+  display: flex;
+  margin-bottom: 1.3rem;
+  justify-content: space-between;
+}
+
+.productName {
+  color: #939290;
+  font-size: 1.3rem;
+}
+
+.productPrice {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.pointsReceived {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.pointsReceivedHeader {
+  color: #939290;
+  font-size: 1.3rem;
+}
+
+.receivedPointsQuantity {
+  color: #e4002b;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.totalPriceContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  justify-content: space-between;
+}
+
+.totalPriceHeader {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.totalPrice {
+  font-size: 2.5rem;
+  font-family: "Cera Pro";
+}

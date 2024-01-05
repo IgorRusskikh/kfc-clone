@@ -1,12 +1,11 @@
 /* eslint-disable react/prop-types */
 
-import Button from "../../components/Button/Button";
 import { Link } from "react-router-dom";
 import styles from "./MenuItem.module.css";
 
 export default function MenuItem({ image, name, price }) {
   return (
-    <Link className={styles.menuListCard} to={"/detail"}>
+    <Link className={styles.menuListCard + " mt16 mb16 ml32"} to={"/detail"}>
       <div className={styles.menuListCardPhoto}>
         <img src={image} alt="" />
       </div>
@@ -17,9 +16,12 @@ export default function MenuItem({ image, name, price }) {
           <span>₽</span>
         </div>
         <div>
-          <Button width="5.645rem" height="1.875rem">
+          <button
+            className="btnPrimary bgRed ceraFont"
+            style={{ height: "2rem", borderRadius: "0.3rem" }}
+          >
             В корзину
-          </Button>
+          </button>
         </div>
       </div>
     </Link>
