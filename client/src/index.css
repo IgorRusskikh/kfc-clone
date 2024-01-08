@@ -33,6 +33,10 @@ a {
   text-decoration: none;
 }
 
+.m0 {
+  margin: 0;
+}
+
 .m20 {
   margin: 0 20rem;
 }
@@ -43,6 +47,14 @@ a {
 
 .mt32 {
   margin-top: 1rem;
+}
+
+.mt40 {
+  margin-top: 1.5rem;
+}
+
+.mt4-8 {
+  margin-top: 4.8rem;
 }
 
 .mr8 {
@@ -69,6 +81,10 @@ a {
   margin-bottom: 2rem;
 }
 
+.mb48 {
+  margin-bottom: 3rem;
+}
+
 .ml8 {
   margin-left: 0.5rem;
 }
@@ -93,6 +109,10 @@ a {
   background-color: #939290;
 }
 
+.redTxt {
+  color: #e4002b;
+}
+
 .grayTxt {
   color: #939290;
 }
@@ -109,13 +129,39 @@ a {
   font-family: "Cera Pro";
 }
 
+.fontSize24 {
+  font-size: 1.5rem;
+}
+
+.fontSize18 {
+  font-size: 1.125rem;
+}
+
+.fontSize40 {
+  font-size: 2.5rem;
+}
+
 .btnPrimary {
+  width: 100%;
   border: none;
+  display: flex;
   color: #ffffff;
   height: 3.5rem;
-  width: 100%;
   font-size: 1rem;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnDisabled {
+  border: none;
+  display: flex;
+  color: #6b6a68;
+  font-size: 1rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
 }
 
 .modalMessage {

@@ -1,4 +1,5 @@
 import {
+  SvgCart,
   SvgKfcLogo,
   SvgPersonIcon,
   SvgPlacePoint,
@@ -36,10 +37,22 @@ export default function Header() {
             <SvgPlacePoint />
             <span className="ml8">Выбрать способ получения</span>
           </button>
-          <Link to="/login">
-            <button className="btnPrimary blackTxt">
+          <Link to="/profile">
+            <button
+              className="btnPrimary blackTxt"
+              style={{ padding: "0.8rem 0.8rem" }}
+            >
               <SvgPersonIcon />
-              <span className="ml8">Войти</span>
+              {/* <span className="ml8">Войти</span> */}
+            </button>
+          </Link>
+          <Link to="/cart">
+            <button
+              className="btnPrimary bgRed whiteTxt"
+              style={{ width: "6rem", padding: "0.8rem 0.8rem" }}
+            >
+              <SvgCart />
+              <span className="ml8">299 ₽</span>
             </button>
           </Link>
         </div>

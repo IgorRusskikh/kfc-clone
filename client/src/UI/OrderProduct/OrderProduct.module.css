@@ -1,0 +1,27 @@
+.orderProduct {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productNameContainer {
+  display: flex;
+  align-items: center;
+}
+
+.productImage {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.productImage img {
+  width: 100%;
+  height: 100%;
+  height: auto;
+}
+
+.productPriceContainer {
+  display: flex;
+  align-items: center;
+}
